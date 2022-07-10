@@ -30,11 +30,12 @@ public class _02_2DArrayPractice {
      *          3, 4, 5
      *          6, 7, 8
      */
+	Integer[][] integerTwoD = {{0, 1, 2}, {3, 4, 5}, {6, 7, 8}};
     public Integer[][] test1() {
         
-        return null;
+        return integerTwoD;
     }
-    
+    String[][] stringTwoD = {{"a", "b", "c", "d"}, {"e", "f", "g", "e"}};
     /*
      * Return a 2D array that can accommodate the grid of values below:
      *          "a", "b", "c", "d",
@@ -42,9 +43,9 @@ public class _02_2DArrayPractice {
      */
     public String[][] test2() {
         
-        return null;
+        return stringTwoD;
     }
-    
+    Boolean[][] booleanTwoD = {{true, false}, {false, false}, {false, true}, {true, true}, {true, false}};
     /*
      * Return a 2D array that can accommodate the grid of values below:
      *          true, false,
@@ -55,7 +56,7 @@ public class _02_2DArrayPractice {
      */
     public Boolean[][] test3() {
         
-        return null;
+        return booleanTwoD;
     }
     
     /*
@@ -87,7 +88,7 @@ public class _02_2DArrayPractice {
     public Object test4() {
         Object[][] objects = { {null, null, null, null}, {null, null, null, new Object()} };
         
-        return null;
+        return objects[1][3];
     }
     
     /* Given the array of Objects below, return the element that is not null
@@ -97,7 +98,7 @@ public class _02_2DArrayPractice {
     public Object test5() {
         Object[][] objects = { {null, null, new Object(), null}, {null, null, null, null} };
         
-        return null;
+        return objects[0][2];
     }
     
     /*
@@ -106,8 +107,11 @@ public class _02_2DArrayPractice {
      */
     public Integer test6() {
         int[][] nums = { {8, 7, 6, 5}, {4, 3}, {2, 1, 0} };
-        
-        return null;
+        int sum = 0;
+        for(int i = 0; i < nums[0].length; i++) {
+        	sum+=nums[0][i];
+        }
+        return sum;
     }
     
     /*
@@ -116,8 +120,11 @@ public class _02_2DArrayPractice {
      */
     public Integer test7() {
         int[][] nums = { {8, 7, 6, 5}, {4, 3}, {2, 1, 0} };
-        
-        return null;
+        int sum = 0;
+        for(int i = 0; i < 2; i++) {
+        	sum+=nums[i][0];
+        }
+        return sum;
     }
     
     /*
@@ -125,8 +132,11 @@ public class _02_2DArrayPractice {
      * specified row
      */
     public Integer getSumByRow(int[][] matrix, int row) {
-        
-        return null;
+        int sum = 0;
+        for(int i = 0; i < matrix[row].length; i++) {
+        	sum+=matrix[row][i];
+        }
+        return sum;
     }
     
     /*
@@ -134,8 +144,11 @@ public class _02_2DArrayPractice {
      * specified column
      */
     public Integer getSumByColumn(int[][] matrix, int col) {
-        
-        return null;
+        int sum = 0;
+        for(int i = 0; i < matrix.length; i++) {
+        	sum+=matrix[i][col];
+        }
+        return sum;
     }
     
     /*
@@ -158,22 +171,35 @@ public class _02_2DArrayPractice {
      *    boundaries, return null.
      */
     public Integer getEastNeighbor(int[][] matrix, int row, int col) {
-        
+    	if(col < matrix[row].length - 1) {
+    		return matrix[row][col + 1];
+    	} else {
         return null;
+    	}
     }
     
     public Integer getWestNeighbor(int[][] matrix, int row, int col) {
-        
+        if(col > 0) {
+        return matrix[row][col - 1];
+        } else {
         return null;
+        }
     }
     
     public Integer getNorthNeighbor(int[][] matrix, int row, int col) {
+        if(row > 0) {
+        	return matrix[row - 1][col];
+        } else {
+        	return null;
+        }
         
-        return null;
     }
     
     public Integer getSouthNeighbor(int[][] matrix, int row, int col) {
-        
+        if(row < matrix.length - 1) {
+        	return matrix[row + 1][col];
+        } else
         return null;
     }
-}
+    }
+
