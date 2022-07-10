@@ -10,7 +10,10 @@ public class CrazyDigitalPainting {
     // 2. Create a 2D array of Color objects. You will need to import
     //    java.awt.Color. Initialize the size of the array using the 
     //    integers created in step 1.
+	
 	Color[][] colors = new Color[width][height];
+	
+	
 
 
     public CrazyDigitalPainting() {

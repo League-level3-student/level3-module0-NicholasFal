@@ -11,7 +11,9 @@ public class _01_IntroTo2DArrays {
         // 2. use two for loops to set all the elements in the 2D array to
         //    a different integer
         //    BE SURE TO USE THE ARRAY'S length VARIABLE
+    	
     	Random ran = new Random();
+    	
     	for(int i = 0; i < twoDArray.length; i++) {
     		for(int j = 0; j < twoDArray[i].length; j++) {
     			twoDArray[i][j] = ran.nextInt(10) + 1;

@@ -27,6 +27,7 @@ public class Firework{
     		sparks[i] = new Spark(600, 700);
     	}
     }
+    
 
     public void launch() {
         // 4. Iterate through the sparks and reset their x and y location

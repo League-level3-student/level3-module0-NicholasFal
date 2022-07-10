@@ -184,10 +184,12 @@ public class _02_2DArrayPractice {
         } else {
         return null;
         }
+        
     }
     
     public Integer getNorthNeighbor(int[][] matrix, int row, int col) {
         if(row > 0) {
+        	
         	return matrix[row - 1][col];
         } else {
         	return null;

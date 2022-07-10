@@ -25,7 +25,11 @@ public class _00_2DArrayDemo {
 
         // array2d is an array of an array of ints. Or a 2D array.
         int[][] array2d;
+        
+        
+        
 
+        
         /*
          * Declaring and initializing the values of a 2D array
          */
