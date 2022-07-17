@@ -104,6 +104,7 @@ public class WorldPanel extends JPanel implements MouseListener, ActionListener 
         // 8. check if each cell should live or die
 
         repaint();
+        
     }
     
 
