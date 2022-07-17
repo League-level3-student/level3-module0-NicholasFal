@@ -105,6 +105,7 @@ public class WorldPanel extends JPanel implements MouseListener, ActionListener 
 
         repaint();
     }
+    
 
     // The method below gets the number of living neighbors around a
     // particular cell in the 2D array. A cell can have up to 8 neighbors.

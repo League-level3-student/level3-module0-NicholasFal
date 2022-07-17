@@ -41,7 +41,9 @@ public class GridPanel extends JPanel{
         	for(int j = 0; j < pixels[i].length; j++) {
         		pixels[i][j] = new Pixel(i * pixelWidth, j * pixelHeight);
         	}
+        	
         }
+        
 
     }
 
