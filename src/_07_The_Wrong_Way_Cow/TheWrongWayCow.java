@@ -84,6 +84,7 @@ public class TheWrongWayCow {
     					downwardArray[0] = j;
     					downwardArray[1] = i;
     				}
+    				
     				}
     				if(i > 1) {
     				if(field[i - 1][j] == 'o' && field[i - 2][j] == 'w') {
