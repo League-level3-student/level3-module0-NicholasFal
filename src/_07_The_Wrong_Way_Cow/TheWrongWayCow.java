@@ -62,34 +62,34 @@ public class TheWrongWayCow {
     	int downwardCows = 0;
     	int[] downwardArray = new int[2];
     	for(int i = 0; i < field.length; i++) {
-    		for(int j = 0; j < field[i].length; i++) {
+    		for(int j = 0; j < field[i].length; j++) {
     			if(field[i][j] == 'c') {
     				if(j < field[i].length - 2) {
     				if(field[i][j + 1] == 'o' && field[i][j + 2] == 'w') {
     					rightwardCows++;
-    					rightwardArray[0] = i;
-    					rightwardArray[1] = j;
+    					rightwardArray[0] = j;
+    					rightwardArray[1] = i;
     				}
     				}
     				if(j > 1) {
     				if(field[i][j - 1] == 'o' && field[i][j - 2] == 'w') {
     					leftwardCows++;
-    					leftwardArray[0] = i;
-    					leftwardArray[1] = j;
+    					leftwardArray[0] = j;
+    					leftwardArray[1] = i;
     				}
     				}
     				if(i < field.length - 2) {
     				if(field[i + 1][j] == 'o' && field[i + 2][j] == 'w') {
     					downwardCows++;
-    					downwardArray[0] = i;
-    					downwardArray[1] = j;
+    					downwardArray[0] = j;
+    					downwardArray[1] = i;
     				}
     				}
     				if(i > 1) {
     				if(field[i - 1][j] == 'o' && field[i - 2][j] == 'w') {
     					upwardCows++;
-    					upwardArray[0] = i;
-    					upwardArray[1] = j;
+    					upwardArray[0] = j;
+    					upwardArray[1] = i;
     				}
     				}
     			}
